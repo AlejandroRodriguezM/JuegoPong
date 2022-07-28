@@ -1,7 +1,6 @@
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.event.KeyEvent;
 
 public class Pala extends Rectangle{
 
@@ -19,24 +18,24 @@ public class Pala extends Rectangle{
 	{
 
 	}
-	
+
 	public void keyRelease(KeyEvent e)
 	{
 
 	}
-	
+
 	public void setYDirection(int yDirection)
 	{
-		
+
 	}
-	
+
 	public void mover() {
-		
+
 	}
-	
+
 	public void dibujar(Graphics g)
 	{
-		
+
 	}
 
 
