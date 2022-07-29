@@ -1,23 +1,19 @@
-import java.awt.Color;
-
-import javax.swing.JFrame;
-import javax.swing.WindowConstants;
+import java.awt.*;
+import javax.swing.*;
 
 public class MarcoJuego extends JFrame{
 
 	PanelJuego panel;
-
-	MarcoJuego()
-	{
+	
+	MarcoJuego(){
 		panel = new PanelJuego();
 		this.add(panel);
-		this.setTitle("Juego pong");
+		this.setTitle("Pong Game");
 		this.setResizable(false);
 		this.setBackground(Color.black);
-		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.pack();
 		this.setVisible(true);
 		this.setLocationRelativeTo(null);
 	}
-
 }

@@ -1,7 +1,5 @@
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.awt.event.KeyEvent;
+import java.awt.*;
+import java.awt.event.*;
 
 public class Pala extends Rectangle{
 
@@ -39,9 +37,9 @@ public class Pala extends Rectangle{
 
 	public void dibujar(Graphics g)
 	{
-		if(id == 1)
+		if(id==1)
 		{
-			g.setColor(Color.blue);
+			g.setColor(Color.BLUE);
 		}
 		else
 		{
