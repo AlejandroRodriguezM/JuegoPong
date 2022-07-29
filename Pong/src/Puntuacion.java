@@ -7,7 +7,7 @@ public class Puntuacion extends Rectangle{
 	static int ALTURA_JUEGO;
 	int jugador1;
 	int jugador2;
-	
+
 	Puntuacion(int ANCHURA_JUEGO,int ALTURA_JUEGO )
 	{
 

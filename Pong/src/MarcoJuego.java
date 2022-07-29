@@ -1,6 +1,7 @@
 import java.awt.Color;
 
 import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class MarcoJuego extends JFrame{
 
@@ -13,7 +14,7 @@ public class MarcoJuego extends JFrame{
 		this.setTitle("Juego pong");
 		this.setResizable(false);
 		this.setBackground(Color.black);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		this.pack();
 		this.setVisible(true);
 		this.setLocationRelativeTo(null);

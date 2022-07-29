@@ -32,15 +32,15 @@ public class PanelJuego extends JPanel implements Runnable{
 		this.setFocusable(true);
 		this.addKeyListener(new AL());
 		this.setPreferredSize(TAMANIO_PANTALLA);
-		
+
 		hiloJuego = new Thread(this);
 		hiloJuego.start();
-		
+
 	}
 
 	public void bolaNueva()
 	{
-		
+
 	}
 
 	public void nuevaPala()
@@ -63,7 +63,7 @@ public class PanelJuego extends JPanel implements Runnable{
 	{
 		pala1.dibujar(g);
 		pala2.dibujar(g);
-		
+
 	}
 
 	public void mover()
@@ -76,19 +76,20 @@ public class PanelJuego extends JPanel implements Runnable{
 
 	}
 
+	@Override
 	public void run()
 	{
 		long ultimoMomento = System.nanoTime();
 		double totalTics = 60.0;
 		double ns = 1000000000 / totalTics;
 		double delta = 0;
-		
+
 		while(true)
 		{
 			long ahora = System.nanoTime();
 			delta += (ahora - ultimoMomento)/ns;
 			ultimoMomento = ahora;
-			
+
 			if(delta >= 1)
 			{
 				mover();
@@ -97,8 +98,8 @@ public class PanelJuego extends JPanel implements Runnable{
 				delta--;
 			}
 		}
-		
-		
+
+
 	}
 
 	public class AL extends KeyAdapter {

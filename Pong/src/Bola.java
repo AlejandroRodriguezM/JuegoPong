@@ -7,7 +7,7 @@ public class Bola extends Rectangle{
 	Random random;
 	int xVelocidad;
 	int yVelocidad;
-	
+
 	Bola()
 	{
 
