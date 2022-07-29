@@ -1,12 +1,16 @@
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
 public class Pala extends Rectangle{
 
-	Pala()
+	int id;
+	int yVelocidad;
+	Pala(int x,int y,int ANCHURA_PALA,int ALTURA_PALA,int id)
 	{
-
+		super(x,y,ANCHURA_PALA,ALTURA_PALA);
+		this.id = id;
 	}
 
 	public void teclaMantenida(KeyEvent e)
@@ -35,7 +39,15 @@ public class Pala extends Rectangle{
 
 	public void dibujar(Graphics g)
 	{
-
+		if(id == 1)
+		{
+			g.setColor(Color.blue);
+		}
+		else
+		{
+			g.setColor(Color.red);
+		}
+		g.fillRect(x, y, width, height);
 	}
 
 

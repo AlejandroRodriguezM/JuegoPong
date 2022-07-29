@@ -1,8 +1,13 @@
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.util.Random;
 
 public class Bola extends Rectangle{
 
+	Random random;
+	int xVelocidad;
+	int yVelocidad;
+	
 	Bola()
 	{
 
